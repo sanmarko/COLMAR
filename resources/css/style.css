@@ -15,6 +15,7 @@ html {
 /*Header container style*/
 .header {
   display: flex;
+  position: fixed;
   width: 100%;
   height: 64px;
   align-items: center;
@@ -60,8 +61,13 @@ html {
 
 /*header text*/
 .colmar {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
+}
+
+.academy {
+  font-size: 22px;
+  font-weight: 400;
 }
 
 
@@ -85,8 +91,8 @@ nav span {
 
 nav a {
   color: #4a4a4a;
-  font-size: 18px;
-  font-weight: normal;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 
@@ -101,10 +107,12 @@ nav a {
 
   header .mobile {
     display: flex;
+    position: fixed;
+    /*z-index: 200;
     /*flex-direction: row;*/
     width: 100%;
-    /*height: 64px;
-    align-items: center;*/
+    background-color: white;
+    /*align-items: center;*/
   }
 
 
@@ -124,7 +132,7 @@ nav a {
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin: 0;
+    padding-top: 64px;
     /*top: 5.3125rem; /* To offset for fixed header. */
   }
 
@@ -148,25 +156,25 @@ nav a {
     display: flex;
     width: 60%;
     margin: 32px 24px;
-    /*height: 634px;
+    overflow: hidden;
+    height: 636px;
     /*padding: 0 5rem 2.5rem 5rem;
     border: solid 1px #979797;
     border-radius: 4px;*/
   }
 
   .start-img .banner {
-    display: flex;
-    width: 100%;
-    height: 636px;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   .start-content {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
     width: 40%;
-    height: auto;
     height: 636px;
     margin: 32px 0;
     /*padding: 0 5rem 2.5rem 5rem;
@@ -223,10 +231,8 @@ nav a {
 
   @media only screen and (max-width: 760px) {
     .start-section {
-      display: flex;
       flex-direction: column;
       width: 100%;
-      height: auto;
     }
 
     .start-img {
@@ -238,6 +244,7 @@ nav a {
 
     .start-img .banner {
       height: 300px;
+      width: 100%;
     }
 
     .start-content {
@@ -286,7 +293,7 @@ nav a {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -299,12 +306,14 @@ nav a {
   width: 60%;
   margin: 32px 24px;
   height: auto;
+  overflow: hidden;
 }
 
 
 .info-img {
-  display: flex;
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
   /*height: 634px;
   /*padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
@@ -319,7 +328,7 @@ nav a {
   font-weight: 700;
   line-height: 1;
   color: #4a4a4a;
-  margin: 32px 24px 0 24px;
+  margin: 32px 24px 0 0;
 }
 
 
@@ -332,7 +341,7 @@ nav a {
   line-height: 1.4;
   font-weight: 500;
   color: #4a4a4a;
-  margin: 24px 24px 0 24px;
+  margin: 24px 24px 0 0;
 }
 
 
@@ -340,7 +349,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   width: 40%;
   height: auto;
   margin: 32px 0px;
@@ -354,11 +363,14 @@ nav a {
 .sub2,
 .sub3 {
   display: inline-flex;
+  /*flex-direction: row;*/
   justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  /*align-items: flex-start;*/
+  max-width: 100%;
   height: auto;
   background-color: white;
+  padding-left: 16px;
+  overflow: hidden;
   /*background-image: url('../images/banner-landingpage.jpg');
   background-position: bottom;
   background-size: cover;
@@ -369,12 +381,25 @@ nav a {
   background-color: grey;
 }
 
+.sub1-img-box,
+.sub2-img-box,
+.sub3-img-box {
+  display: flex;
+  align-items: flex-start;
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+  /*padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;*/
+}
+
 .sub1-img,
 .sub2-img,
 .sub3-img {
-  display: flex;
-  width: 35%;
-  margin: 16px;
+  display: block;
+  max-width: 100%;
+  margin: 16px 0;
   height: auto;
   /*padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
@@ -402,8 +427,7 @@ nav a {
   align-items: flex-start;
   width: 65%;
   height: auto;
-  margin: 32px 0;
-  margin-right: 32px;
+  margin: 0 16px;
   /*padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -414,7 +438,7 @@ nav a {
 .sub2-header,
 .sub3-header {
   display: flex;
-  width: 100%;
+  max-width: 100%;
 
 }
 
@@ -422,14 +446,14 @@ nav a {
 .sub2-text,
 .sub3-text {
   display: flex;
-  width: 100%;
+  max-width: 100%;
 }
 
 .sub1-nav,
 .sub2-nav,
 .sub3-nav {
   display: flex;
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -439,7 +463,7 @@ nav a {
   font-weight: 700;
   color: #4a4a4a;
   line-height: 1.4;
-  margin: 8px 24px;
+  margin: 8px 0;
 }
 
 .sub-text {
@@ -447,7 +471,7 @@ nav a {
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;
-  margin: 8px 24px;
+  margin: 8px 0;
   line-height: 1.4;
 }
 
@@ -456,7 +480,7 @@ nav a {
   font-size: 20px;
   font-weight: 400;
   color: blue;
-  margin: 8px 24px;
+  margin: 8px 0;
   line-height: 1.4;
 }
 
@@ -471,7 +495,7 @@ nav a {
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin: 32px 0px;
+    margin: 32px 16px;
   }
 
   .sub1,
@@ -484,6 +508,7 @@ nav a {
     width: 100%;
     height: auto;
     background-color: white;
+    overflow: hidden;
   }
 
   .sub1-img,
@@ -495,18 +520,18 @@ nav a {
   .sub1-img-mob,
   .sub2-img-mob,
   .sub3-img-mob {
-    display: flex;
+    display: block;
     width: 100%;
-    margin: 16px;
+    margin: 0;
     height: auto;
   }
 
   .sub1-content,
   .sub2-content,
   .sub3-content {
-    width: 100%;
-    margin: 32px 0;
-    margin-right: 32px;
+    width: 90%;
+    margin: 0;
+    margin-left: 16px;
   }
 
 .sub-head {
@@ -515,7 +540,7 @@ nav a {
   font-weight: 700;
   color: #4a4a4a;
   line-height: 1.4;
-  margin: 8px 24px;
+  margin: 8px 0;
 }
 
 .sub-text {
@@ -523,7 +548,7 @@ nav a {
   font-size: 20px;
   font-weight: 400;
   color: #4a4a4a;
-  margin: 8px 24px;
+  margin: 8px 0;
   line-height: 1.4;
   }
 
@@ -532,7 +557,7 @@ nav a {
   font-size: 20px;
   font-weight: 400;
   color: blue;
-  margin: 8px 24px;
+  margin: 8px 0;
   line-height: 1.4;
   }
 
@@ -692,7 +717,7 @@ nav a {
 
 /*Thesis Container*/
 
-/* .thesis-section and t.thesis-header specified with .course-main and .course-header css*/
+/* .thesis-header specified with .course-header css*/
 
 .thesis-section {
   display: flex;
@@ -702,7 +727,6 @@ nav a {
   max-width: 100%;
   /*height: auto;
   background-color: grey;*/
-  padding-bottom: 16px;
 }
 
 
@@ -736,28 +760,15 @@ nav a {
   border-radius: 4px;*/
 }
 
-.info-header {
-  display: flex;
-  width: 100%;
+.h2-thesis {
+  /*display: flex;
+  width: 100%;*/
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 1;
   color: #4a4a4a;
-  margin: 32px 24px 0 24px;
-}
-
-
-.info-text {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  font-family: "Roboto";
-  font-size: 24px;
-  line-height: 1.4;
-  font-weight: 500;
-  color: #4a4a4a;
-  margin: 24px 24px 0 24px;
+  margin: 16px 16px 0 0;
 }
 
 
@@ -765,7 +776,7 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  /*align-items: flex-start;*/
   width: 40%;
   height: auto;
   margin: 32px 0px;
@@ -773,6 +784,94 @@ nav a {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20A;*/
+}
+
+.thesis-sub .sub1 {
+  background-color: grey;
+}
+
+
+@media only screen and (max-width: 760px) {
+
+  .main-thesis {
+
+    max-width: 100%;
+    margin: 32px 24px;
+  }
+
+  .h2-thesis {
+    display: none;
+  }
+
+
+  .info-text {
+    display: none;
+  }
+
+
+  .thesis-sub {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: white;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  width: 100%;
+  color: #4a4a4a;
+  display: inline-flex;
+  font-size: .75rem;
+  flex-direction: row;
+  justify-content: space-between;
+  /*align-items: stretch;*/
+}
+
+footer .copyright {
+  display: inline-flex;
+  /*justify-content: flex-start;*/
+  flex-grow: 1;
+  padding: 16px 0 72px 24px;
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: color: #4a4a4a;;
+}
+
+footer .terms {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  word-spacing: 16px;
+  padding: 25px 24px 25px 0;
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #4a4a4a;;
+}
+
+@media only screen and (max-width: 760px) {
+  footer .content {
+    justify-content: flex-start;
+    /*align-items: stretch;*/
+    font-size: .625rem;
+    padding: 0;
+    margin-left: 16px;
+  }
+
+  footer .copyright {
+    font-size: 10px;
+    padding: 0;
+  }
+
+  footer .terms {
+    display: none;
+  }
 }
 
 

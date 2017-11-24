@@ -9,7 +9,7 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
+<header>
     <!--div class="content">
       <a><img class = "logo" src="./resources/images/ic-logo.svg"><strong>COLMAR</strong>ACADEMY</a>
       <nav class="desktop">
@@ -31,7 +31,7 @@
 
           <!--White Logo img and header text-->
           <img class="logo" src="./resources/images/ic-logo.svg" alt = "logo"/>
-          <h5><b class = "colmar">COLMAR</b>ACADEMY</h5>
+          <h5><span class = "colmar">COLMAR</span><span class = "academy">ACADEMY</span></h5>
         </div>
 
         <!--Header Item navigation-->
@@ -98,7 +98,9 @@
       <!--Information subsection-->
       <div class="info-sub">
         <div class="sub1">
-          <img class = "sub1-img" src="./resources/images/information-orientation.jpg" alt = "orientation"/>
+          <div class="sub1-img-box">
+            <img class = "sub1-img" src="./resources/images/information-orientation.jpg" alt = "orientation"/>
+          </div>
           <img class = "sub1-img-mob" src="./resources/images/information-orientation-mobile.jpg" alt = "orientation"/>
           <div class="sub1-content">
               <div class="sub1-header">
@@ -114,7 +116,9 @@
         </div>
 
         <div class="sub2">
-          <img class = "sub2-img" src="./resources/images/information-campus.jpg" alt = "campus"/>
+          <div class="sub2-img-box">
+            <img class = "sub2-img" src="./resources/images/information-campus.jpg" alt = "campus"/>
+          </div>
           <img class = "sub2-img-mob" src="./resources/images/information-campus-mobile.jpg" alt = "campus"/>
           <div class="sub2-content">
               <div class="sub2-header">
@@ -130,7 +134,9 @@
         </div>
 
         <div class="sub3">
-          <img class = "sub3-img" src="./resources/images/information-guest-lecture.jpg" alt = "guest-lecture"/>
+          <div class="sub3-img-box">
+            <img class = "sub3-img" src="./resources/images/information-guest-lecture.jpg" alt = "guest-lecture"/>
+          </div>
           <img class = "sub3-img-mob" src="./resources/images/information-guest-lecture-mobile.jpg" alt = "guest-lecture"/>
           <div class="sub3-content">
               <div class="sub3-header">
@@ -274,10 +280,10 @@
         <div class = "main-thesis">
           <!--<video src="C:\Users\mark\excursion\resources\css\excursion.mp4"-->
           <video class = "video" src="./resources\videos\thesis.mp4"
-          height="auto" width="100%" autoplay></video>
+          height="auto" width="100%" controls></video>
 
           <div>
-            <h2 class="h1-style">Reimagine Urban</h2>
+            <h2 class="h2-thesis">Reimagine Urban</h2>
           </div>
           <div>
             <p class="info-text">"Curabitur vitae libero in ipsum porttitor
@@ -290,30 +296,33 @@
 
       <!--Thesis subsection-->
         <div class="thesis-sub">
-        <div class="sub1">
-          <img class = "sub1-img" src="./resources/images/thesis-fisma.jpg" alt = "fisma"/>
-
-          <div class="sub1-content">
+          <div class="sub1">
+            <div class="sub1-img-box">
+              <img class = "sub1-img" src="./resources/images/thesis-fisma.jpg" alt = "fisma"/>
+            </div>
+            <div class="sub1-content">
               <div class="sub1-header">
                 <h1 class="sub-head">Fisma Design and Prototype</h1>
               </div>
               <div class="sub1-text">
                 <h2 class="sub-text">Designer showcaste of new prototype product</h2>
               </div>
+            </div>
           </div>
-        </div>
 
-        <div class="sub2">
-          <img class = "sub2-img" src="./resources/images/thesis-now-and-then.jpg" alt = "now and then"/>
-          <div class="sub2-content">
+          <div class="sub2">
+            <div class="sub2-img-box">
+              <img class = "sub2-img" src="./resources/images/thesis-now-and-then.jpg" alt = "now and then"/>
+            </div>
+            <div class="sub2-content">
               <div class="sub2-header">
                 <h1 class="sub-head">Now and Then</h1>
               </div>
               <div class="sub2-text">
                 <h2 class="sub-text">Research study about New York</h2>
               </div>
+            </div>
           </div>
-        </div>
 
       </div>
 
@@ -321,6 +330,14 @@
     </div>
 
   </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="content">
+      <span class="copyright">© Colmar Academy. All Rights Reserved</span>
+      <span class="terms">Terms Privacy</span>
+    </div>
+  </footer>
 
 </body>
 </html>
