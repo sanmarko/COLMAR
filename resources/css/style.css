@@ -19,45 +19,29 @@ html {
   width: 100%;
   height: 64px;
   justify-content: center;
-  /*flex-direction: column;
-  flex: 1;
-  color: #4a4a4a;
-  font-family: 'Roboto';*/
 }
 
 /*Heder desktop container*/
 .desktop {
   display: flex;
   width: 1300px;
-  /*height: 64px;*/
   background-color: white;
   justify-content: space-between;
   border: 1px solid;
-  /*flex-direction: row;
-  align-items: center;*/
-  /*color: #4a4a4a;
-  font-family: 'Roboto';
-  /*margin-right: 24px; /* 8px = 24px-16px(defined in the nav span)*/
-  /*margin-left: 24px;*/
 }
 
 /* Logo and text colmar text container */
 .logotext {
   display: inline-flex;
   align-items: center;
-  /*height: 64px;
-  width: auto;*/
 }
 
 /*White header logo*/
 .logo {
-  /*display: inline-flex;
-  /*align-items: center;*/
   height: 32px;
   width: auto;
   margin-left: 24px;
 }
-
 
 /*Colmar header text*/
 .colmar {
@@ -101,6 +85,7 @@ nav a {
   font-weight: 600;
 }
 
+/*Header Menu Animation*/
 nav a:hover {
   text-decoration: underline;
   transition-property: text-decoration 0.5s linear 300ms;
@@ -121,12 +106,9 @@ nav a:hover {
   header .mobile {
     display: flex;
     position: fixed;
-    /*z-index: 200;
-    /*flex-direction: row;*/
     width: 100%;
     background-color: white;
     border: 1px solid;
-    /*align-items: center;*/
   }
 
 
@@ -140,15 +122,15 @@ nav a:hover {
   }
 }
 
+/*Webage definition*/
 .page {
   display: flex;
-  /*flex-direction: column;*/
   justify-content: center;
   width: 100%;
   height: auto;
 }
 
-/* Main content */
+/* Main content defined for 1300px width*/
   .main-content {
     display: flex;
     flex-direction: column;
@@ -157,12 +139,11 @@ nav a:hover {
     height: auto;
     padding-top: 64px;
     border: 1px solid;
-    /*top: 5.3125rem; /* To offset for fixed header. */
   }
 
+  /* Start-banner section container*/
 
   /* Banner Start Section */
-
   .start-section {
     display: inline-flex;
     justify-content: flex-start;
@@ -170,21 +151,15 @@ nav a:hover {
     width: 100%;
     height: auto;
     background-color: #cacaca;
-    /*background-image: url('../images/banner-landingpage.jpg');
-    background-position: bottom;
-    background-size: cover;
-    background-repeat: no-repeat;*/
   }
 
+  /*banenr image*/
   .start-img {
     display: flex;
     width: 60%;
     margin: 32px 24px;
     overflow: hidden;
     height: 510px;
-    /*padding: 0 5rem 2.5rem 5rem;
-    border: solid 1px #979797;
-    border-radius: 4px;*/
   }
 
   .start-img .banner {
@@ -193,6 +168,7 @@ nav a:hover {
     height: auto;
   }
 
+  /*Banenr text container*/
   .start-content {
     display: flex;
     flex-direction: column;
@@ -201,10 +177,6 @@ nav a:hover {
     width: 40%;
     height: auto;
     margin: 32px 0;
-    /*padding: 0 5rem 2.5rem 5rem;
-    border: solid 1px #979797;
-    border-radius: 4px;
-    background-color: #9dc20A;*/
   }
 
   .start-header {
@@ -219,6 +191,7 @@ nav a:hover {
     width: 80%;
   }
 
+  /* Banner header text style*/
   .rubik {
     font-family: "Rubik", serif;
     font-size: 3rem;
@@ -227,6 +200,7 @@ nav a:hover {
     color: #4a4a4a;
   }
 
+  /* banner text style*/
   .damion {
     font-family: "Damion";
     font-size: 2.5rem;
@@ -240,9 +214,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     width: 80%;
-    /*border-radius: 4px;
-    background-color: #4a4a4a;
-    color: white;*/
   }
 
   .start-button .button {
@@ -250,9 +221,6 @@ nav a:hover {
     justify-content: center;
     border-radius: 4px;
     color: white;
-    /*border-radius: 4px;
-    color: white;*/
-    /*width: 100%;*/
     padding: 8px 0;
     background-color: #4a4a4a;
     font-family: "Roboto";
@@ -266,6 +234,7 @@ nav a:hover {
     transition-property: background-color 0.5s linear 300ms;
   }
 
+  /* Banner definition for smaller screen*/
   @media only screen and (max-width: 760px) {
     .start-section {
       flex-direction: column;
@@ -305,30 +274,24 @@ nav a:hover {
     }
 
     .damion {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       margin: 32px 16px 24px 16px;
       line-height: 1.2;
     }
 
     .start-button {
       width: 100%;
-      /*background-color: grey;
-      /*margin: 0 16px;*/
     }
 
     .start-button .button {
-      /*display: flex;*/
-      /*width: 100%;
-      text-align: center;*/
-      /*justify-content: center;
-      align-items: center;*/
       font-size: 1rem;
-      /*padding: 10px 0;*/
       margin: 0 16px;
     }
 }
 
-/* Information container*/
+/*Information section container*/
+
+/* Information container definition*/
 .info-section {
   display: flex;
   justify-content: flex-start;
@@ -349,15 +312,10 @@ nav a:hover {
   overflow: hidden;
 }
 
-
 .info-img {
   display: block;
   max-width: 100%;
   height: auto;
-  /*height: 634px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;*/
 }
 
 .info-header {
@@ -384,7 +342,7 @@ nav a:hover {
   margin: 24px 0 0 0;
 }
 
-
+/* Information subsection containers*/
 .info-sub {
   display: flex;
   flex-direction: column;
@@ -393,19 +351,14 @@ nav a:hover {
   width: 40%;
   height: auto;
   margin: 16px 0px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: #9dc20A;*/
 }
 
+/* Individual subsection info containers*/
 .sub1,
 .sub2,
 .sub3 {
   display: inline-flex;
-  /*flex-direction: row;*/
   justify-content: flex-start;
-  /*align-items: flex-start;*/
   max-width: 100%;
   height: auto;
   background-color: white;
@@ -413,12 +366,9 @@ nav a:hover {
   overflow: hidden;
   border: 1px solid;
   border-radius: 10px;
-  /*background-image: url('../images/banner-landingpage.jpg');
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;*/
 }
 
+/*Light grey background color definition for sub info 3 container*/
 .sub3 {
   background-color: #cacaca;
 }
@@ -431,9 +381,6 @@ nav a:hover {
   width: 35%;
   height: auto;
   overflow: hidden;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;*/
 }
 
 .sub1-img,
@@ -443,9 +390,6 @@ nav a:hover {
   max-width: 100%;
   margin: 16px 0;
   height: auto;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;*/
 }
 
 .sub1-img-mob,
@@ -454,12 +398,7 @@ nav a:hover {
   display: none;
 }
 
-/*.start-img .banner {
-  display: flex;
-  width: 100%;
-  height: 636px;
-}*/
-
+/* Individual subsection text containers*/
 .sub1-content,
 .sub2-content,
 .sub3-content {
@@ -470,10 +409,6 @@ nav a:hover {
   width: 65%;
   height: auto;
   margin: 0 16px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: #9dc20A;*/
 }
 
 .sub1-header,
@@ -481,7 +416,6 @@ nav a:hover {
 .sub3-header {
   display: flex;
   max-width: 100%;
-
 }
 
 .sub1-text
@@ -497,7 +431,6 @@ nav a:hover {
   display: flex;
   max-width: 100%;
 }
-
 
 .sub-head {
   font-family: "Roboto", sans-serif;
@@ -526,6 +459,7 @@ nav a:hover {
   line-height: 1.4;
 }
 
+/* Information "Read more" text animation*/
 .sub-nav:hover {
   text-decoration: underline;
   transition-property: text-decoration 0.5s linear 300ms;
@@ -533,12 +467,15 @@ nav a:hover {
   transition-property: font-weight 0.5s linear 300ms;
 }
 
-@media only screen and (max-width: 760px) {
+/*Information container definition for smaller screens*/
+@media only screen and (max-width: 690px) {
 
+  /*Main information image and text non-display definition*/
   .main-info {
     display: none;
   }
 
+  /* Remaining information subsection container definition*/
   .info-sub {
     display: flex;
     flex-direction: column;
@@ -553,8 +490,6 @@ nav a:hover {
   .sub3 {
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-start;
-    /*align-items: flex-start;*/
     width: 100%;
     height: auto;
     background-color: white;
@@ -578,9 +513,6 @@ nav a:hover {
     height: auto;
     overflow: hidden;
     padding: 0;
-    /*padding: 0 5rem 2.5rem 5rem;
-    border: solid 1px #979797;
-    border-radius: 4px;*/
   }
 
   .sub1-img-mob,
@@ -597,13 +529,8 @@ nav a:hover {
   .sub3-content {
     width: 90%;
     margin: 0;
-    /*margin-left: 32px;*/
     margin-bottom: 64px;
   }
-
-  /*.sub3-content {
-    margin: 0 0 32px 32px;
-  }*/
 
 .sub-head {
   font-family: "Roboto", sans-serif;
@@ -633,6 +560,8 @@ nav a:hover {
   }
 
 }
+
+/* Courses section container*/
 
 /* Main Courses container*/
 .course-main {
@@ -687,10 +616,6 @@ nav a:hover {
 .box-img {
   display: flex;
   max-width: 100%;
-  /*height: 634px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;*/
 }
 
 /*Individual course text content*/
@@ -703,8 +628,6 @@ nav a:hover {
 
 /* Individual course header*/
 .h1-style {
-  /*display: flex;
-  width: 100%;*/
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
@@ -715,23 +638,17 @@ nav a:hover {
 
 /*Individual course text style*/
 .box-text {
-  /*display: flex;
-  width: 100%;*/
   font-family: "Roboto", sans-serif;
-  /*font-size: 1rem;*/
   font-weight: 400;
   line-height: 1.4;
   color: #4a4a4a;
   margin: 8px 16px 0 16px;
 }
 
-@media only screen and (max-width: 760px) {
+/*Course container definition for smaller screens*/
+@media only screen and (max-width: 690px) {
 
-  .main-content {
-
-    /*width: 760px;*/
-  }
-
+  /* Main course section*/
   .course-main {
     background-color: white;
     padding-bottom: 28px;
@@ -739,46 +656,23 @@ nav a:hover {
     width: 100%;
   }
 
-  /* Main course header container*/
-  /*.course-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }*/
-
   .course-content {
     flex-direction: column;
-    /*justify-content: center;*/
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .course-box {
-    /*display: flex;
-    flex-direction: column;*/
     width: 100%;
     margin: 4px 0;
-    /*background-color: grey;*/
-  }
-
-  .head-style {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: black;
-    line-height: 1;
-    margin: 32px 0 16px 0;
   }
 
   .box-content {
-    /*background-color: grey;*/
     margin: 0;
   }
 
   .h1-style {
-    /*max-width: 100%;*/
     font-family: "Roboto", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
@@ -789,10 +683,12 @@ nav a:hover {
     margin: 0 16px;
   }
 
+  /*Course images not displayed*/
   .box-img {
     display: none;
   }
 
+  /*Course text not displayed*/
   .box-text {
     display: none;
     margin:0;
@@ -804,14 +700,11 @@ nav a:hover {
 
 /* .thesis-header specified with .course-header css*/
 
+/* Thesis container definition*/
 .thesis-section {
   display: flex;
   flex-direction: column;
-  /*justify-content: center;
-  align-items: center;*/
   max-width: 100%;
-  /*height: auto;
-  background-color: grey;*/
 }
 
 /* Thesis Content container*/
@@ -837,15 +730,9 @@ nav a:hover {
 .video {
   display: flex;
   width: 100%;
-  /*height: 634px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;*/
 }
 
 .h2-thesis {
-  /*display: flex;
-  width: 100%;*/
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 700;
@@ -854,27 +741,23 @@ nav a:hover {
   margin: 16px 16px 0 0;
 }
 
-
+/*Sub thesis container definition*/
 .thesis-sub {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: flex-start;*/
   width: 40%;
   height: auto;
   margin: 16px 0px 32px;
-  /*padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: #9dc20A;*/
 }
 
+/* Light grey background definition for the 1st subsection container*/
 .thesis-sub .sub1 {
   background-color: #cacaca;
 }
 
-
-@media only screen and (max-width: 760px) {
+/* Thesis container definition for smaller screens*/
+@media only screen and (max-width: 690px) {
 
   .main-thesis {
 
@@ -887,44 +770,34 @@ nav a:hover {
     display: none;
   }
 
-
   .info-text {
     display: none;
   }
-
 
   .thesis-sub {
     display: none;
   }
 }
 
-/* Footer */
 
+/* Footer container*/
 .footer {
   display: flex;
   justify-content: center;
   width: 100%;
   height: auto;
-  /*background-color: white;
-  padding: 1.5rem 2rem;*/
 }
 
 .content {
   width: 1300px;
-  /*color: #4a4a4a;*/
   display: inline-flex;
   font-size: .75rem;
-  /*flex-direction: row;
-  justify-content: space-between;*/
   background-color: white;
   border: 1px solid;
-  /*padding: 1.5rem 2rem;
-  /*align-items: stretch;*/
 }
 
 .copyright {
   display: inline-flex;
-  /*justify-content: flex-start;*/
   flex-grow: 1;
   padding: 16px 0 72px 24px;
   font-family: "Roboto";
@@ -945,15 +818,13 @@ nav a:hover {
   color: #4a4a4a;;
 }
 
+/* Footer container for smaller screens*/
 @media only screen and (max-width: 760px) {
   .content {
-    /*justify-content: flex-start;
-    /*align-items: stretch;*/
     width: 100%;
     font-size: .625rem;
     padding: 0;
     margin: 0;
-    /*margin-left: 16px;*/
   }
 
   .copyright {
@@ -965,36 +836,3 @@ nav a:hover {
     display: none;
   }
 }
-
-
-/*.info-text {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  font-family: "Roboto";
-  font-size: 24px;
-  line-height: 1.4;
-  font-weight: 500;
-  color: #4a4a4a;
-  margin: 24px 24px 0 24px;
-}
-
-
-
-/*.start-button {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-  border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
-}
-
-.start-button .button {
-  padding: 8px auto;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 1.4;
-}*/
