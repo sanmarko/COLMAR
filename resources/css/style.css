@@ -4,12 +4,12 @@
 /*Base font definition*/
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   }
 
 
  body {
-   /*line-height: 1.4;*/
+   line-height: 1.4;
  }
 
 /*Header container style*/
@@ -18,35 +18,35 @@ html {
   position: fixed;
   width: 100%;
   height: 64px;
-  align-items: center;
-  flex-direction: column;
+  justify-content: center;
+  /*flex-direction: column;
   flex: 1;
   color: #4a4a4a;
-  font-family: 'Roboto';
+  font-family: 'Roboto';*/
 }
 
-/*Heder 960px site container*/
+/*Heder desktop container*/
 .desktop {
   display: flex;
-  width: 100%;
-  height: 64px;
+  width: 1300px;
+  /*height: 64px;*/
   background-color: white;
   justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  color: #4a4a4a;
+  border: 1px solid;
+  /*flex-direction: row;
+  align-items: center;*/
+  /*color: #4a4a4a;
   font-family: 'Roboto';
   /*margin-right: 24px; /* 8px = 24px-16px(defined in the nav span)*/
   /*margin-left: 24px;*/
 }
 
-/* Logo and text h5 container */
+/* Logo and text colmar text container */
 .logotext {
   display: inline-flex;
   align-items: center;
-  height: 64px;
-  width: auto;
-  font-size: 18px;
+  /*height: 64px;
+  width: auto;*/
 }
 
 /*White header logo*/
@@ -59,15 +59,20 @@ html {
 }
 
 
-/*header text*/
+/*Colmar header text*/
 .colmar {
-  font-size: 22px;
+  font-size: 1.25rem;
   font-weight: 700;
+  color: #4a4a4a;
+  font-family: 'Roboto';
 }
 
+/*Academy header text*/
 .academy {
-  font-size: 22px;
+  font-size: 1.25rem;
   font-weight: 400;
+  color: #4a4a4a;
+  font-family: 'Roboto';
 }
 
 
@@ -80,8 +85,8 @@ html {
 .nav {
   display: inline-flex;
   align-items: center;
-  height: 64px;
-  width: auto;
+  /*height: 64px;
+  width: auto;*/
   margin-right: 8px;
 }
 
@@ -89,12 +94,20 @@ nav span {
   margin-right: 16px;
 }
 
+/* Menu text definition*/
 nav a {
   color: #4a4a4a;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 1.125rem;
+  font-weight: 600;
 }
 
+nav a:hover {
+  text-decoration: underline;
+  transition-property: text-decoration 0.5s linear 300ms;
+}
+
+
+/*Header for smaller screens*/
 
 @media only screen and (max-width: 760px) {
   header .desktop {
@@ -112,6 +125,7 @@ nav a {
     /*flex-direction: row;*/
     width: 100%;
     background-color: white;
+    border: 1px solid;
     /*align-items: center;*/
   }
 
@@ -126,26 +140,36 @@ nav a {
   }
 }
 
+.page {
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
 
+/* Main content */
   .main-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    width: 1300px;
     height: auto;
     padding-top: 64px;
+    border: 1px solid;
     /*top: 5.3125rem; /* To offset for fixed header. */
   }
 
 
-  /* Start Section */
+  /* Banner Start Section */
 
   .start-section {
     display: inline-flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     height: auto;
-    background-color: grey;
+    background-color: #cacaca;
     /*background-image: url('../images/banner-landingpage.jpg');
     background-position: bottom;
     background-size: cover;
@@ -157,7 +181,7 @@ nav a {
     width: 60%;
     margin: 32px 24px;
     overflow: hidden;
-    height: 636px;
+    height: 510px;
     /*padding: 0 5rem 2.5rem 5rem;
     border: solid 1px #979797;
     border-radius: 4px;*/
@@ -175,7 +199,7 @@ nav a {
     justify-content: center;
     align-items: flex-start;
     width: 40%;
-    height: 636px;
+    height: auto;
     margin: 32px 0;
     /*padding: 0 5rem 2.5rem 5rem;
     border: solid 1px #979797;
@@ -185,48 +209,61 @@ nav a {
 
   .start-header {
     display: flex;
+    align-items: flex-start;
     width: 80%;
-
   }
 
   .start-text {
     display: flex;
+    align-items: flex-start;
     width: 80%;
   }
 
-  .cursive {
-    font-family: "Roboto", sans-serif;
-    font-size: 64px;
-    font-weight: 700;
+  .rubik {
+    font-family: "Rubik", serif;
+    font-size: 3rem;
+    font-weight: bold;
     line-height: 1;
     color: #4a4a4a;
   }
 
-  .striking {
-    font-family: "Roboto";
-    font-size: 36px;
+  .damion {
+    font-family: "Damion";
+    font-size: 2.5rem;
     line-height: 1.2;
     font-weight: 500;
     color: #4a4a4a;
-    margin: 48px 0;
+    margin: 2.5rem 0;
   }
 
   .start-button {
-      display: inline-flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 80%;
-    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /*border-radius: 4px;
     background-color: #4a4a4a;
-    color: white;
+    color: white;*/
   }
 
   .start-button .button {
-    padding: 8px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+    /*border-radius: 4px;
+    color: white;*/
+    /*width: 100%;*/
+    padding: 8px 0;
+    background-color: #4a4a4a;
     font-family: "Roboto";
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.75rem;
     line-height: 1.4;
+  }
+
+  .start-button .button:hover {
+    background-color: blue;
+    transition-property: background-color 0.5s linear 300ms;
   }
 
   @media only screen and (max-width: 760px) {
@@ -238,12 +275,12 @@ nav a {
     .start-img {
       display: flex;
       width: 100%;
-      height: 300px;
+      height: 310px;
       margin: 0 2px;
     }
 
     .start-img .banner {
-      height: 300px;
+      height: 310px;
       width: 100%;
     }
 
@@ -261,30 +298,33 @@ nav a {
     width: 100%;
     }
 
-    .cursive {
-      font-size: 36px;
-      line-height: 1.4;
+    .rubik {
+      font-size: 1.7rem;
+      line-height: 1.2;
       margin: 0 16px;
     }
 
-    .striking {
-      font-size: 24px;
+    .damion {
+      font-size: 1.5rem;
       margin: 32px 16px 24px 16px;
-      line-height: 1.4;
+      line-height: 1.2;
     }
 
     .start-button {
-      width: 91%;
-      margin: 0 16px;
+      width: 100%;
+      /*background-color: grey;
+      /*margin: 0 16px;*/
     }
 
     .start-button .button {
-      /*display: flex;
-      width: 100%;
+      /*display: flex;*/
+      /*width: 100%;
+      text-align: center;*/
       /*justify-content: center;
       align-items: center;*/
-      font-size: 18px;
-      padding: 10px 0;
+      font-size: 1rem;
+      /*padding: 10px 0;*/
+      margin: 0 16px;
     }
 }
 
@@ -324,7 +364,7 @@ nav a {
   display: flex;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   color: #4a4a4a;
@@ -335,13 +375,13 @@ nav a {
 .info-text {
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   font-family: "Roboto";
-  font-size: 24px;
+  font-size: 1rem;
   line-height: 1.4;
   font-weight: 500;
   color: #4a4a4a;
-  margin: 24px 24px 0 0;
+  margin: 24px 0 0 0;
 }
 
 
@@ -349,10 +389,10 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*align-items: flex-start;*/
+  align-items: flex-start;
   width: 40%;
   height: auto;
-  margin: 32px 0px;
+  margin: 16px 0px;
   /*padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -371,6 +411,8 @@ nav a {
   background-color: white;
   padding-left: 16px;
   overflow: hidden;
+  border: 1px solid;
+  border-radius: 10px;
   /*background-image: url('../images/banner-landingpage.jpg');
   background-position: bottom;
   background-size: cover;
@@ -378,7 +420,7 @@ nav a {
 }
 
 .sub3 {
-  background-color: grey;
+  background-color: #cacaca;
 }
 
 .sub1-img-box,
@@ -459,7 +501,7 @@ nav a {
 
 .sub-head {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #4a4a4a;
   line-height: 1.4;
@@ -468,7 +510,7 @@ nav a {
 
 .sub-text {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  /*font-size: 20px;*/
   font-weight: 400;
   color: #4a4a4a;
   margin: 8px 0;
@@ -477,11 +519,18 @@ nav a {
 
 .sub-nav {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  /*font-size: 20px;*/
   font-weight: 400;
   color: blue;
   margin: 8px 0;
   line-height: 1.4;
+}
+
+.sub-nav:hover {
+  text-decoration: underline;
+  transition-property: text-decoration 0.5s linear 300ms;
+  font-weight: bold;
+  transition-property: font-weight 0.5s linear 300ms;
 }
 
 @media only screen and (max-width: 760px) {
@@ -495,7 +544,8 @@ nav a {
     flex-direction: column;
     width: 100%;
     height: auto;
-    margin: 32px 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
   }
 
   .sub1,
@@ -503,12 +553,14 @@ nav a {
   .sub3 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /*justify-content: flex-start;
+    /*align-items: flex-start;*/
     width: 100%;
     height: auto;
     background-color: white;
     overflow: hidden;
+    padding: 0;
+    border: 0;
   }
 
   .sub1-img,
@@ -517,12 +569,26 @@ nav a {
     display: none;
   }
 
+  .sub1-img-box,
+  .sub2-img-box,
+  .sub3-img-box {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    /*padding: 0 5rem 2.5rem 5rem;
+    border: solid 1px #979797;
+    border-radius: 4px;*/
+  }
+
   .sub1-img-mob,
   .sub2-img-mob,
   .sub3-img-mob {
     display: block;
-    width: 100%;
-    margin: 0;
+    max-width: 100%;
+    margin: 0 16px;
     height: auto;
   }
 
@@ -531,34 +597,39 @@ nav a {
   .sub3-content {
     width: 90%;
     margin: 0;
-    margin-left: 16px;
+    /*margin-left: 32px;*/
+    margin-bottom: 64px;
   }
+
+  /*.sub3-content {
+    margin: 0 0 32px 32px;
+  }*/
 
 .sub-head {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #4a4a4a;
   line-height: 1.4;
-  margin: 8px 0;
+  margin: 16px 32px 8px;
 }
 
 .sub-text {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: #4a4a4a;
-  margin: 8px 0;
-  line-height: 1.4;
+  margin: 0 0 0 32px;
+  line-height: 1.2;
   }
 
 .sub-nav {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: blue;
-  margin: 8px 0;
-  line-height: 1.4;
+  margin: 8px 0 0 32px;
+  line-height: 1.2;
   }
 
 }
@@ -571,11 +642,11 @@ nav a {
   align-items: center;
   max-width: 100%;
   height: auto;
-  background-color: grey;
+  background-color: #cacaca;
   padding-bottom: 16px;
 }
 
-/* Main info container*/
+/* Course and Thesis header container*/
 .course-header,
 .thesis-header {
   display: flex;
@@ -584,23 +655,26 @@ nav a {
   width: 100%;
 }
 
+/* Header style*/
 .head-style {
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: 700;
   color: #4a4a4a;
   line-height: 1.4;
   margin: 32px 0 16px 0;
 }
 
+/* Course content container*/
 .course-content {
   display: flex;
   flex-direction: row;
   justify-content: center;
   max-width: 100%;
-  padding: 0 54px;
+  padding: 0 56px;
 }
 
+/*Individual course box container*/
 .course-box {
   display: flex;
   flex-direction: column;
@@ -609,6 +683,7 @@ nav a {
   background-color: white;
 }
 
+/*Individual course image*/
 .box-img {
   display: flex;
   max-width: 100%;
@@ -618,6 +693,7 @@ nav a {
   border-radius: 4px;*/
 }
 
+/*Individual course text content*/
 .box-content {
   display: flex;
   flex-direction: column;
@@ -625,35 +701,42 @@ nav a {
   margin-bottom: 24px;
 }
 
-
+/* Individual course header*/
 .h1-style {
   /*display: flex;
   width: 100%;*/
   font-family: "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.4;
   color: #4a4a4a;
   margin: 16px 16px 0 16px;
 }
 
+/*Individual course text style*/
 .box-text {
   /*display: flex;
   width: 100%;*/
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  /*font-size: 1rem;*/
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.4;
   color: #4a4a4a;
   margin: 8px 16px 0 16px;
 }
 
 @media only screen and (max-width: 760px) {
 
+  .main-content {
+
+    /*width: 760px;*/
+  }
+
   .course-main {
     background-color: white;
-    padding-bottom: 16px;
-    margin: 0 16px;
+    padding-bottom: 28px;
+    margin: 0;
+    width: 100%;
   }
 
   /* Main course header container*/
@@ -676,13 +759,13 @@ nav a {
     /*display: flex;
     flex-direction: column;*/
     width: 100%;
-    margin: 8px 0;
-    background-color: grey;
+    margin: 4px 0;
+    /*background-color: grey;*/
   }
 
   .head-style {
     font-family: "Roboto", sans-serif;
-    font-size: 32px;
+    font-size: 1.75rem;
     font-weight: 700;
     color: black;
     line-height: 1;
@@ -690,18 +773,20 @@ nav a {
   }
 
   .box-content {
-    background-color: grey;
-    margin-bottom: 24px;
+    /*background-color: grey;*/
+    margin: 0;
   }
 
   .h1-style {
     /*max-width: 100%;*/
     font-family: "Roboto", sans-serif;
-    font-size: 32px;
+    font-size: 1.25rem;
     font-weight: 700;
     line-height: 1;
     color: #4a4a4a;
-    margin: 16px 16px 0 16px;
+    background-color: #cacaca;
+    padding: 16px 16px 24px 16px;
+    margin: 0 16px;
   }
 
   .box-img {
@@ -729,8 +814,6 @@ nav a {
   background-color: grey;*/
 }
 
-
-
 /* Thesis Content container*/
 .thesis-content {
   display: flex;
@@ -747,7 +830,7 @@ nav a {
   justify-content: flex-start;
   align-items: flex-start;
   max-width: 60%;
-  margin: 32px 24px;
+  margin: 16px 24px 32px;
   height: auto;
 }
 
@@ -779,7 +862,7 @@ nav a {
   /*align-items: flex-start;*/
   width: 40%;
   height: auto;
-  margin: 32px 0px;
+  margin: 16px 0px 32px;
   /*padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
@@ -787,7 +870,7 @@ nav a {
 }
 
 .thesis-sub .sub1 {
-  background-color: grey;
+  background-color: #cacaca;
 }
 
 
@@ -796,7 +879,8 @@ nav a {
   .main-thesis {
 
     max-width: 100%;
-    margin: 32px 24px;
+    margin: 0;
+    margin-bottom: 24px;
   }
 
   .h2-thesis {
@@ -816,23 +900,29 @@ nav a {
 
 /* Footer */
 
-footer {
+.footer {
   display: flex;
-  background-color: white;
-  padding: 1.5rem 2rem;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  /*background-color: white;
+  padding: 1.5rem 2rem;*/
 }
 
-footer .content {
-  width: 100%;
-  color: #4a4a4a;
+.content {
+  width: 1300px;
+  /*color: #4a4a4a;*/
   display: inline-flex;
   font-size: .75rem;
-  flex-direction: row;
-  justify-content: space-between;
+  /*flex-direction: row;
+  justify-content: space-between;*/
+  background-color: white;
+  border: 1px solid;
+  /*padding: 1.5rem 2rem;
   /*align-items: stretch;*/
 }
 
-footer .copyright {
+.copyright {
   display: inline-flex;
   /*justify-content: flex-start;*/
   flex-grow: 1;
@@ -843,12 +933,12 @@ footer .copyright {
   color: color: #4a4a4a;;
 }
 
-footer .terms {
+.terms {
   display: inline-flex;
   flex-grow: 1;
   justify-content: flex-end;
   word-spacing: 16px;
-  padding: 25px 24px 25px 0;
+  padding: 16px 24px 72px 0;
   font-family: "Roboto";
   font-size: 0.75rem;
   font-weight: 400;
@@ -856,20 +946,22 @@ footer .terms {
 }
 
 @media only screen and (max-width: 760px) {
-  footer .content {
-    justify-content: flex-start;
+  .content {
+    /*justify-content: flex-start;
     /*align-items: stretch;*/
+    width: 100%;
     font-size: .625rem;
     padding: 0;
-    margin-left: 16px;
+    margin: 0;
+    /*margin-left: 16px;*/
   }
 
-  footer .copyright {
+  .copyright {
     font-size: 10px;
-    padding: 0;
+    padding: 16px 0 16px 16px;
   }
 
-  footer .terms {
+  .terms {
     display: none;
   }
 }
