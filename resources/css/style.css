@@ -1,12 +1,9 @@
-/* Universal Styles */
-
 
 /*Base font definition*/
 html {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   }
-
 
  body {
    line-height: 1.4;
@@ -36,7 +33,7 @@ html {
   align-items: center;
 }
 
-/*White header logo*/
+/*Header logo*/
 .logo {
   height: 32px;
   width: auto;
@@ -122,7 +119,7 @@ nav a:hover {
   }
 }
 
-/*Webage definition*/
+/*Webpage definition*/
 .page {
   display: flex;
   justify-content: center;
@@ -130,14 +127,14 @@ nav a:hover {
   height: auto;
 }
 
-/* Main content defined for 1300px width*/
+/* Main webpage content defined for 1300px width*/
   .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1300px;
     height: auto;
-    padding-top: 64px;
+    padding-top: 63px;
     border: 1px solid;
   }
 
@@ -153,7 +150,7 @@ nav a:hover {
     background-color: #cacaca;
   }
 
-  /*banenr image*/
+  /*Banner image*/
   .start-img {
     display: flex;
     width: 60%;
@@ -168,7 +165,7 @@ nav a:hover {
     height: auto;
   }
 
-  /*Banenr text container*/
+  /*Banner text container*/
   .start-content {
     display: flex;
     flex-direction: column;
@@ -794,6 +791,7 @@ nav a:hover {
   font-size: .75rem;
   background-color: white;
   border: 1px solid;
+  border-top: none;
 }
 
 .copyright {
